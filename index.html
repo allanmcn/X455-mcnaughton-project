@@ -4,7 +4,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -14,27 +14,35 @@ body {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-
 <!-- Navbar -->
-
-
-
-<img src="img/dandy_boy_logo_wht.png" alt="dandy boy records logo" style="min-width:100px" width="100">
-
- 
+<div class="w3-top">
+  <div class="w3-bar w3-card">
+   
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
+         <img src="img/dandy_boy_logo_wht.png" width="75px" style=float:left>
+<a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
     <a href="#artists" class="w3-bar-item w3-button w3-padding-large w3-hide-small">artists</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">tour dates</a>
     <a href="#releases" class="w3-bar-item w3-button w3-padding-large w3-hide-small">releases</a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">about</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">about</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     
-
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-gray w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
   </div>
-</div>       
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#artists" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">artists</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">tour dates</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact</a>
+  <a href="#releases" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">releases</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
+</div>
+
 <!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
 <!-- The Home Section -->
   
@@ -43,6 +51,7 @@ body {font-family: "Lato", sans-serif}
       <h3>Whitney's Playland</h3></div>
 
 <!-- The Artists Section -->
+ <p></p>
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="artists">
     <h2 class="w3-wide">The Dandy Family</h2>
     
