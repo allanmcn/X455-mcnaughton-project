@@ -5,28 +5,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 <style>
-body {font-family: "Lato", sans-serif}
+body {font-family: "Special Elite"}
 .mySlides {display: none}
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
+
+
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card">
+  <div class="w3-bar w3-white">
+    <div class="w3-right w3-hide-small">
+          <a href="shop"><img src="img/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" width="30px"></a>
+          <a href="search"><img src="img/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" width="30px"></a>
+        </div>
    
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><img src="img/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"></i></a>
          <img src="img/dandy_boy_logo_wht.png" width="75px" style=float:left>
-<a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
-    <a href="#artists" class="w3-bar-item w3-button w3-padding-large w3-hide-small">artists</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">tour dates</a>
-    <a href="#releases" class="w3-bar-item w3-button w3-padding-large w3-hide-small">releases</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">about</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+<a href="/index.html" class="w3-bar-item w3-button w3-padding-large">home</a>
+    <a href="/artists.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">artists</a>
+    <a href="/releases.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">releases</a>
+    <a href="/videos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">videos</a>
+    <a href="/live.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">live dates</a>
+    <a href="/about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">about</a>
     
     </div>
   </div>
@@ -34,22 +40,25 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#artists" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">artists</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">tour dates</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contact</a>
-  <a href="#releases" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">releases</a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
+  <a href="/artists.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">artists</a>
+  <a href="/releases.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">releases</a>
+  <a href="/videos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">videos</a>
+  <a href="/live.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">live dates</a>
+  <a href="/about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">about</a>
 </div>
-
-<!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
+<!-- Page content -->
 
 
-  <!-- The Artists Section -->
+
+<!-- Page content -->
+
+  <!-- Start of Artists slideshow -->
   <style>
+    
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body 
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -193,8 +202,68 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(5)"></span> 
   <span class="dot" onclick="currentSlide(6)"></span> 
 </div>
+<!-- end of carousel slideshow-->
+
+<!-- start of accordion-->
+
+  <div class="w3-container w3-content w3-padding-40" style="max-width:800px">
+
+<h2>The Dandy Family</h2>
+<p>Click to hear music from each artist:</p>
+  
+<button onclick="myAccordion('Demo1')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Yea-Ming and the Rumors</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/i-cant-have-it-all">I Can't Have It All</a></p>
+  <p><a href="https://yea-ming.bandcamp.com/album/residue">Residue</a></p>
+</div>
+
+<button onclick="myAccordion('Demo2')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Rhymies</button>
+<div id="Demo2" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/i-dream-watching">I Dream Watching</a></p>
+</div>
+
+<button onclick="myAccordion('Demo3')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">The Goods</button>
+<div id="Demo3" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/track/back-to-you">Back To You</a></p>
+    <p><a href="https://dandyboyrecords.bandcamp.com/album/dont-spoil-the-fun">Don't Spoil The Fun</a></p>
+
+</div>
+<button onclick="myAccordion('Demo4')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Kelly Stoltz</button>
+<div id="Demo4" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/if-you-dont-know-me-buy-now">If You Don't Know Me, Buy Now!</a></p>
+    <p><a href="https://dandyboyrecords.bandcamp.com/album/la-fleur">La Fleur</a></p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- Footer -->
+       <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+ <img src="img/Bandcamp-Logo-1--Streamline-Ultimate.png" width="30px">  <a href="https://dandyboyrecords.bandcamp.com/">bandcamp</a>  |  
+    <img src="img/Bluesky-Logo--Streamline-Core.png" width="30px">  <a href="https://bsky.app/profile/dandyboyrecords.bsky.social/">bluesky</a>  |  
+    <img src="img/Instagram--Streamline-Core.png" width="30px">  <a href="https://www.instagram.com/dandyboyrecords/">instagram</a>  |
+        <img src="img/Discogs.png" width="30px">  <a href="https://www.discogs.com/label/1707310-Dandy-Boy-Records">discogs</a>    
+
+  <p class="w3-medium">Coyright © Dandy Boy Records 2026</p>
+</footer>
+   
+
 
 <script>
+
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// slideshow script begin
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -221,87 +290,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-</script>
-<!-- The About Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide">About Dandy Boy Records</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">Dandy Boy Records was born four years ago out of the scrappy Oakland music scene.
-Friends were sending musician and label founder Bobby Martinez new music and he wanted to support them. That tight knit, community-based approach continues to this day and has resulted in 40 Dandy Boy releases so far, with many more on the way.</p>
-<img
-                src="img/bobby photo.jpeg"
-                style="float:left; width:300px; padding-right:20px; padding-top:10px;"
-                alt="portrait of Bobby Martinez"
-              />
-
-<p>Dandy Boy doesn’t have a set genre or sound. I think DBR releases all sound different, but fit well together. I don't think any of the releases are just one thing so the label isn't just one thing: James Wavey is psychedelic hip hop soul; Yea-Ming and Ryann Gonsalves are both introspective songwriters but have very different sounds; The Goods and The 1981 are big hook power pop with completely different vibes; Aluminum, Seablite, Nothing Natural and Blue Ocean all have shoegaze influences, but none of them sound the same; Planet Birthday, Magic User and Smile Too Much all have a ‘90s slacker rock thing going on, but don’t sound much alike; Funeral Cake do bubblegum pop punk; The Wind-Ups do fast, blown-out garage punk; Ryli are jangly pop, and Kelley Stolz is Bay Area psych pop royalty. It’s all a grab bag of good tunes.
-<img
-                src="img/dandy_boy_26_roster.jpeg"
-                style="float:right; width:300px; padding-left:20px;padding-top:10px;"
-                alt="photo collage of dandy boy artists"
-              />Dandy Fam are just a bunch of music fans doing their thing. I like a lot of different stuff and I live in an exciting and diverse city. Dandy Boy reflects the people I am lucky enough to be surrounded and inspired by. I don’t think there’s a ‘core sound,’ but there is a vibe that connects everyone. We’re all just a bunch of music nerds getting stoked on music. We’re all a bit neurotic and put a lot of effort and love into what we’re creating but aren’t too wrapped up in what’s popular or hip so our music feels very authentic and genuine. You can hear how personal each release is. Yea-Ming and Ryann Gonsalves both put out albums that felt like journal entries set to music. Even the big hooky releases like The Goods or The 1981 just ring with earnestness and a degree of vulnerability. It’s music you can sing along to when you are feeling sentimental!
-</p>
-  
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
@@ -313,14 +301,6 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
-
 </body>
 </html>

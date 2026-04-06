@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<body>
+<div class="w3-container">
+
+<h2>The Dandy Family</h2>
+<p>Click to hear music from each artist:</p>
+  
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Yea-Ming and the Rumors</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/i-cant-have-it-all">I Can't Have It All</a></p>
+  <p><a href="https://yea-ming.bandcamp.com/album/residue">Residue</a></p>
+</div>
+
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Rhymies</button>
+<div id="Demo2" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/i-dream-watching">I Dream Watching</a></p>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">The Goods</button>
+<div id="Demo3" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/track/back-to-you">Back To You</a></p>
+    <p><a href="https://dandyboyrecords.bandcamp.com/album/dont-spoil-the-fun">Don't Spoil The Fun</a></p>
+
+</div>
+<button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-light-grey w3-left-align"><img src="arrow_drop_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">Kelly Stoltz</button>
+<div id="Demo4" class="w3-container w3-hide">
+  <p><a href="https://dandyboyrecords.bandcamp.com/album/if-you-dont-know-me-buy-now">If You Don't Know Me, Buy Now!</a></p>
+    <p><a href="https://dandyboyrecords.bandcamp.com/album/la-fleur">La Fleur</a></p>
+
+</div>
+
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>

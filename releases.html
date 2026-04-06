@@ -48,16 +48,49 @@ body {font-family: "Special Elite"}
 </div>
 
 <!-- Page content -->
+ <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">Some of our latest releases</h2>
 
 
-      <img
-        class="w3-image"
-        src="img/splash.png"
-        alt="Dandy Boy Records"
-        width="1600"
-        height="800"
-      />
-  
+  <p>Click on the images to display them in full size.</p>
+
+
+<div class="w3-row-padding" w3-center style="max-width:1200px">
+  <div class="w3-container w3-third">
+    <img src="/img/back to you.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer"
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="/img/softjaw.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer" 
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="/img/wakeup.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer"
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+</div><br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="/img/soften.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer"
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="/img/ifyoudont.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer"
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="/img/residue.jpg" class="w3-border" style="padding:4px;width:80%;cursor:pointer"
+    onclick="ModalGallery(this)" class="w3-hover-opacity">
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
 
 
 
@@ -87,7 +120,10 @@ function myFunction() {
   }
 }
 
-
+function ModalGallery(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
 
 </script>
 
